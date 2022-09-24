@@ -18,3 +18,21 @@ h1{
 {
     text-align: center;
 }
+
+
+.imageThumbnail
+{
+  display: block;
+  float:left;
+  margin-left: 20%;
+    object-fit: cover;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.recipeThumbnailText
+{
+    padding-left: 10%;
+}
+

@@ -2,25 +2,61 @@
 
 <head>
 
-    
+
     <title>BEANS</title>
-    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">BeanRecipes.com</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                    <li class = ""><a href="recipe1">Cowboy Caviar</a></li>
+                    <li><a href="recipe2">Shrimp and Beans</a></li>
+                    <li><a href="recipe3">Beans and Toast</a></li>
+            </ul>
+        </div>
+    </nav>
 </head>
 
 <body>
     <h1> Welcome to BeanRecipes.com!</h1>
-    <p class = "centerText"> 
-    At least, I wanted to call it BeanRecipes.com, but that url was already taken. 
-    <em> You may have beat me to it, Christina, but your kidneys are still less valuable than mine.</em>
+    <p class="centerText">
+        At least, I wanted to call it BeanRecipes.com, but that url was already taken.
+        <em> You may have beat me to it, Christina, but your kidneys are still less valuable than mine.</em>
     </p>
 
 
 
-    
-    
-    
+
+    <div class="beanSelectorContainer">
+        <div class="beanSelector">
+            <a class="beanRecipeTile" href="recipe1.html">
+                <img class="pic" src="media/cowboy-caviar.png"></img>
+                Cowboy Caviar
+            </a>
+            <a class="beanRecipeTile" href="recipe2.html">
+                <img class="pic" src="media/beans-shrimp.jpg"></img>
+                Shrimp and Beans
+            </a>
+            <br>
+            <a class="beanRecipeTile" href="recipe3.html">
+                <img class="pic" src="media/beans-toast.jpg"></img>
+                Beans and Toast
+            </a>
+
+        </div>
+
+
+    </div>
+
     <div>
-        <img src = "media/beans.jpg" class="center"> 
+        <img src="media/beans.jpg" class="center">
     </div>
 </body>

@@ -31,7 +31,7 @@
     <h1>
         Random Dish
     </h1>
-    <div id="YoMommaButton">
+    <div id="RandFoodPicButton">
         <button type="button" onclick="generateFoodPic()">
             Click here for a random dish pic
         </button>
@@ -48,7 +48,7 @@
             .then((response) => response.json())
             .then((data) => {
                 results += data.image;
-                results += "\" styles='width: 150px;'>"
+                results += "\">"
                 document.getElementById("RandFoodPic").innerHTML = results;
                 console.log(data);
             });

@@ -42,14 +42,19 @@
 <script>
     function generateFoodPic() {
         event.preventDefault();
-        let info = "";
+        let results = "<img src=\"";
 
         fetch("https://foodish-api.herokuapp.com/api/")
             .then((response) => response.json())
-            .then((data) => console.log(data));
-
-
-        document.getElementById("RandFoodPic").textContent = info;
+            .then((data) => {
+                results += data.image;
+                results += "\" styles='width: 150px;'>"
+                document.getElementById("RandFoodPic").innerHTML = results;
+                console.log(data);
+            });
+        
+        
+        // document.getElementById("RandFoodPic").innerHTML = results;
     }
 </script>
 

@@ -1,50 +1,46 @@
 .center {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body{
-    background-color: #CAD2C5;
+body {
+  background-color: #CAD2C5;
 }
 
 
-h1{
-    font-family: fantasy;
+h1 {
+  font-family: fantasy;
   font-style: normal;
-  text-align: center;  
-  color: #303633; 
+  text-align: center;
+  color: #303633;
   font-size: 80px;
 }
 
-h3
-{
-  color: #303633; 
+h3 {
+  color: #303633;
   font-size: 45px;
   font-family: fantasy;
   font-style: normal;
 }
 
-.centerText
-{
-    text-align: center;
+.centerText {
+  text-align: center;
 }
 
 
-.imageThumbnail
-{
+.imageThumbnail {
   display: block;
-  float:left;
+  float: left;
   margin-left: 20%;
-    object-fit: cover;
+  object-fit: cover;
   width: 230px;
   height: 230px;
   border-radius: 50%;
 }
 
-.imageThumbnailCenter
-{
+.imageThumbnailCenter {
   display: block;
   /*float:left;*/
   margin-left: auto;
@@ -57,9 +53,8 @@ h3
   border-radius: 50%;
 }
 
-.recipeThumbnailText
-{
-    padding-left: 10%;
+.recipeThumbnailText {
+  padding-left: 10%;
 }
 
 .beanSelectorContainer {
@@ -71,7 +66,7 @@ h3
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .beanRecipeTile {
@@ -80,26 +75,23 @@ h3
   /*background-color: blue;*/
   border: solid 1px black;
   margin: 0px 10px 10px 10px;
-  align-items:center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.pintoBeanRecipeTile {
-  
-}
+.pintoBeanRecipeTile {}
 
 .pic {
   max-width: 100%;
   object-fit: cover;
   width: 230px;
   height: 230px;
-  
+
 }
 
 
-.recipeBox
-{
+.recipeBox {
   background-color: #EBEBEB;
   padding: 15px;
   text-align: left;
@@ -111,9 +103,8 @@ h3
 }
 
 
-.groupNames
-{
-  font-size:10px;
+.groupNames {
+  font-size: 10px;
   color: #303633;
   margin-left: 10px;
 }
@@ -121,9 +112,47 @@ h3
 
 .card {
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
-      display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+h4 {
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+h4 {
+
+  padding: 30px;
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 600px;
+  }
+
+  100% {
+    background-position: 50%;
+  }
+}
+
+.centerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

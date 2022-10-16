@@ -45,15 +45,8 @@
         let info = "";
 
         fetch("https://foodish-api.herokuapp.com/api/")
-            .then( (response) => {
-                console.log(resonse.json());
-                return response.json();
-            }).catch(console.log(error);)
-            
-            // .then(function(json) {
-            //     console.log(json);
-
-            // })
+            .then((response) => response.json())
+            .then((data) => console.log(data));
 
 
         document.getElementById("RandFoodPic").textContent = info;

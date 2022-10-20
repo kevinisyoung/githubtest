@@ -44,14 +44,23 @@
         event.preventDefault();
         let results = "<img src=\"";
 
-        fetch("https://foodish-api.herokuapp.com/api/")
+        fetch("https://www.themealdb.com/api/json/v1/1/random.php")
             .then((response) => response.json())
             .then((data) => {
-                results += data.image;
+                results += data.meals[0].strMealThumb;
                 results += "\">"
                 document.getElementById("RandFoodPic").innerHTML = results;
                 console.log(data);
             });
+
+        // fetch("https://foodish-api.herokuapp.com/api/")
+        //     .then((response) => response.json())
+        //     .then((data) => {
+        //         results += data.image;
+        //         results += "\">"
+        //         document.getElementById("RandFoodPic").innerHTML = results;
+        //         console.log(data);
+        //     });
        
        
         // document.getElementById("RandFoodPic").innerHTML = results;
